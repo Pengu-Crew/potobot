@@ -1,15 +1,11 @@
-import { EventContext, PotocuitDataEvent, PotocuitEvent } from '@potoland/core';
+import { createEvent } from '@potoland/core';
 
-class Ready implements PotocuitEvent {
-  data = {
-    name: 'ready',
+export default createEvent({
+  data: {
+    name: "ready",
     once: true,
-  } satisfies PotocuitDataEvent;
-
-  run(...[user]: EventContext<this>) {
-    // user.username returns undefined
+  },
+  run: async (user) => {
     console.log(`${user.username} is ready!`);
-  }
-}
-
-export default new Ready();
+  },
+});
