@@ -1,0 +1,30 @@
+{
+  "name": "potobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "dev": "npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@potoland/core": "github:potoland/potocuit#master",
+    "discord-api-types": "^0.37.66"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript": "^5.3.3"
+  },
+  "imports": {
+    "#root/*": "./dist/*.js",
+    "#lib/*": "./dist/lib/*.js"
+  }
+}
