@@ -1,16 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/potoland/potocuit/master/rc_schema.json",
-    "debug": false,
-    "application": {
-        "token": "A nice token",
-        "intents": 513,
-        "applicationId": "A nice application id"
-    },
+    "variables": "dist/lib/env.js",
     "locations": {
         "base": "src",
         "langs": "langs",
         "commands": "commands",
         "events": "events",
-        "output": "dist"
+        "components": "components",
+        "output": "dist",
+        "templates": ""
     }
 }

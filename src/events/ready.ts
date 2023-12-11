@@ -2,10 +2,8 @@ import { createEvent } from '@potoland/core';
 
 export default createEvent({
   data: {
-    name: "ready",
+    name: 'ready',
     once: true,
   },
-  run: async (user) => {
-    console.log(`${user.username} is ready!`);
-  },
+  run: (user, client) => client.logger.info(`${user.username} is ready!`),
 });
