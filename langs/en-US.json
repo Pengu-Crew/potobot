@@ -1,3 +1,5 @@
 {
-    "hi":"Fietu is sleeping..."
+    "utils": {
+        "avatar": "{{name}}'s avatar"
+    }
 }

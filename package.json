@@ -22,6 +22,8 @@
     "@typescript-eslint/parser": "^6.15.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "potocli": "github:potoland/potocli",
+    "tiramisu-cli": "github:potoland/potocli",
     "typescript": "^5.3.3"
   },
   "imports": {
