@@ -1,6 +1,7 @@
-import { ActivityType, PotoClient, PresenceUpdateStatus } from '@potoland/core';
+import { Client } from 'seyfert';
+import { ActivityType, PresenceUpdateStatus } from 'discord-api-types/v10';
 
-export class PotoBot extends PotoClient {
+export class PotoBot extends Client {
   public constructor() {
     super({
       presence: () => {
@@ -8,8 +9,8 @@ export class PotoBot extends PotoClient {
           activities: [
             {
               name: 'Github repositories',
-              type: ActivityType.Watching,
               state: 'Looking for changes in potocuit',
+              type: ActivityType.Watching,
             },
           ],
           status: PresenceUpdateStatus.Idle,
@@ -21,8 +22,13 @@ export class PotoBot extends PotoClient {
   }
 
   public async run(): Promise<'OK'> {
+    this.setServices({
+      langs: {
+        default: 'en-US',
+      },
+    });
+
     await this.start();
-    await this.execute();
     await this.uploadCommands();
 
     return 'OK';

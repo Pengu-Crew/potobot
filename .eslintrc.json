@@ -1,15 +1,15 @@
 {
-    "extends": [
-        "prettier",
-		"eslint:recommended",
-		"plugin:@typescript-eslint/eslint-recommended",
-		"plugin:@typescript-eslint/recommended"
-    ],
-    "rules": {
-        "@typescript-eslint/ban-types": "off",
-        "@typescript-eslint/no-var-requires": "off"
-    },
-    "env": {
-        "node": true
-    }
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-var-requires": "off"
+  },
+  "env": {
+    "node": true
+  }
 }

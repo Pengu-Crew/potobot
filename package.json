@@ -12,18 +12,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@potoland/core": "github:potoland/potocuit#master",
-    "discord-api-types": "^0.37.66",
-    "dotenv": "^16.3.1"
+    "discord-api-types": "^0.37.71",
+    "dotenv": "^16.4.5",
+    "seyfert": "github:potoland/potocuit"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
-    "eslint": "^8.56.0",
+    "@types/node": "^20.11.24",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "potocli": "github:potoland/potocli",
-    "tiramisu-cli": "github:potoland/potocli",
     "typescript": "^5.3.3"
   },
   "imports": {

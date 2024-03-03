@@ -1,4 +1,4 @@
-import { createEvent } from '@potoland/core';
+import { createEvent } from 'seyfert';
 
 export default createEvent({
   data: {

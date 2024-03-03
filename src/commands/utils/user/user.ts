@@ -1,4 +1,4 @@
-import { Command, Declare, Options } from '@potoland/core';
+import { Command, Declare, Options } from 'seyfert';
 import AvatarCommand from './avatar';
 
 @Declare({
